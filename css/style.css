@@ -118,6 +118,15 @@ p.lead {
     transition: all 0.3s ease;
 }
 
+.bfn {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    padding: 0.375rem 1.35rem;
+    transition: all 0.3s ease;
+}
+
+
 .btn-outline-light:hover {
     color: #d6619c;
 }
@@ -133,13 +142,35 @@ p.lead {
     padding: 0.6rem 2rem;
     border: 0;
 }
+.bfn-primary {
+    border-radius: 3px;
+  
+    background-image: -moz-linear-gradient( 122deg, #e54595 0%, #fd378e 100%);
+    background-image: -webkit-linear-gradient( 122deg, #e54595 0%, #fd378e 100%);
+    background-image: -ms-linear-gradient( 122deg, #e54595 0%, #fd378e 100%);
+    background-image: linear-gradient( 122deg, #e54595 0%, #fd378e 100%);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    padding: 0.4rem 2rem;
+    margin-bottom: 25px;
+    border: 0;
+}
 
 .btn-primary:hover,
+.bfn-primary:hover;
 .btn-primary:focus,
 .btn-primary:active,
+.bfn-primary:active;
 .btn-primary:not([disabled]):not(.disabled).active,
+.bfn-primary:not([disabled]):not(.disabled).active,
 .btn-primary:not([disabled]):not(.disabled):active,
+.bfn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
+    background-image: linear-gradient( 122deg, #fd378e 0%, #e54595 100%);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+}
+.show>.bfn-primary.dropdown-toggle {
     background-image: linear-gradient( 122deg, #fd378e 0%, #e54595 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
     color: #FFF;
@@ -252,7 +283,9 @@ header {
     text-align: center;
     color: #FFF;
 }
-
+.bg {
+    background-color: #ffb8f6;
+}
 .bg-gradient {
     background-image: -moz-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
     background-image: -webkit-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
@@ -653,4 +686,149 @@ header {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+.LocationStepComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.GeolocationInput {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.GeolocationInput input[type=number]::-webkit-outer-spin-button, .GeolocationInput input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.GeolocationInput input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.GeolocationInput-header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 50px 0 0;
+  font-size: 30px;
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Avenir, 'Lucida Grande', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.GeolocationInput-subheader {
+  text-align: center;
+  max-width: 560px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Avenir, 'Lucida Grande', Arial, sans-serif;
+  font-weight: 400;
+  margin: 5px auto 20px;
+}
+
+@media (max-width: 767px) {
+  .GeolocationInput-header {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .GeolocationInput-subheader {
+    width: 90%;
+  }
+}
+
+.GeolocationInput-zip .GeolocationInput-form {
+  width: 274px;
+  margin: 50px auto 0;
+}
+
+.GeolocationInput-form--valid {
+  background: no-repeat url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwIDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgwLjUwNzAzOSwwLDAsMC41MDQ1MDksLTU0Ljg4NywtNy42OTQyNykiPgogICAgICAgIDxwYXRoIGQ9Ik0xMjYuMjcyLDE1LjI1MUMxMjYuMzkzLDE1LjI2MiAxMjYuNTA2LDE1LjI4OSAxMjYuNjEyLDE1LjM1MUMxMjYuODg1LDE1LjUwOSAxMjcuMDMzLDE1LjgzMiAxMjYuOTczLDE2LjE0MkMxMjYuOTQ5LDE2LjI2MyAxMjYuODk2LDE2LjM2NSAxMjYuODI2LDE2LjQ2NEwxMTUuMjk5LDMxLjEwOEwxMDguNDU5LDIzLjk5NEwxMDguNDEyLDIzLjk0MUMxMDguMzQyLDIzLjg0MiAxMDguMjg4LDIzLjc0IDEwOC4yNjQsMjMuNjJDMTA4LjI1LDIzLjU1IDEwOC4yNDcsMjMuNDc4IDEwOC4yNTMsMjMuNDA2QzEwOC4yOCwyMy4xMTcgMTA4LjQ3OCwyMi44NjMgMTA4Ljc1MiwyMi43NjdDMTA4Ljg0MiwyMi43MzUgMTA4LjkzNywyMi43MjEgMTA5LjAzMywyMi43MjVDMTA5LjE3NiwyMi43MzIgMTA5LjMxNiwyMi43NzkgMTA5LjQzMiwyMi44NjJDMTA5LjQ4NCwyMi44OTkgMTA5LjQ5NSwyMi45MTEgMTA5LjU0MSwyMi45NTVMMTE1LjE4NiwyOC44MjZMMTI1LjY0NywxNS41MzZMMTI1LjY5NCwxNS40ODJDMTI1Ljc4MiwxNS4zOTkgMTI1Ljg3NiwxNS4zMzEgMTI1Ljk5MSwxNS4yOTFDMTI2LjA1MSwxNS4yNyAxMjYuMDY4LDE1LjI3IDEyNi4xMywxNS4yNThDMTI2LjIwMSwxNS4yNTEgMTI2LjIwMSwxNS4yNTEgMTI2LjI3MiwxNS4yNTFaIiBzdHlsZT0iZmlsbDpyZ2IoNDIsMjQ1LDIxNik7ZmlsbC1ydWxlOm5vbnplcm87Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=) right 42px top 11px;
+  background-size: 24px;
+}
+
+.GeolocationInput-zip .GeolocationInput-form--valid {
+  background-position: right 20px top 12px;
+}
+
+.GeolocationInput-input {
+  box-sizing: border-box;
+  width: 90%;
+  border: 3px solid #FFF;
+  border-radius: 500px;
+  padding: 10px 42px 10px 42px;
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-family: 'Rubik';
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%22-1%20-1%2022%2022%22%3E%3Ctitle%3Esearch%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20transform%3D%22translate(-279%20-505)%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M298.293%20522.97l-4.934-4.935c1.042-1.336%201.628-2.976%201.628-4.71%200-2.052-.797-3.973-2.25-5.415-1.44-1.44-3.363-2.238-5.414-2.238-2.04%200-3.96.797-5.414%202.238-1.44%201.442-2.238%203.363-2.238%205.414%200%202.05.797%203.973%202.238%205.414%201.453%201.442%203.375%202.24%205.414%202.24%201.735%200%203.375-.576%204.71-1.62l4.935%204.935%201.323-1.324z%22%20fill%3D%22%23AEBCCE%22%2F%3E%3Cpath%20d%3D%22M283.223%20517.414c-1.09-1.09-1.688-2.543-1.688-4.09%200-1.547.598-3%201.7-4.1%201.09-1.09%202.542-1.69%204.09-1.69%201.546%200%203%20.6%204.1%201.69%201.09%201.1%201.688%202.553%201.688%204.1%200%201.547-.597%203-1.687%204.09-1.102%201.102-2.555%201.7-4.102%201.7-1.547%200-3-.598-4.1-1.7z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") 11px 11px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.GeolocationInput-zip .GeolocationInput-input {
+  width: 274px;
+}
+
+@media (max-width: 767px) {
+  .GeolocationInput-input {
+    padding: 15px 62px 10px 42px;
+  }
+}
+
+.GeolocationInput-input:disabled {
+  padding-left: 20px;
+  background: #eee;
+}
+
+.GeolocationInput-button {
+  background: #FFF;
+  max-width: 135px;
+  width: 60%;
+  color: #A23F92;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 8px 24px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Rubik';
+  font-weight: 500;
+}
+
+.GeolocationInput .svg-ico-search {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%22-1%20-1%2022%2022%22%3E%3Ctitle%3Esearch%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20transform%3D%22translate(-279%20-505)%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M298.293%20522.97l-4.934-4.935c1.042-1.336%201.628-2.976%201.628-4.71%200-2.052-.797-3.973-2.25-5.415-1.44-1.44-3.363-2.238-5.414-2.238-2.04%200-3.96.797-5.414%202.238-1.44%201.442-2.238%203.363-2.238%205.414%200%202.05.797%203.973%202.238%205.414%201.453%201.442%203.375%202.24%205.414%202.24%201.735%200%203.375-.576%204.71-1.62l4.935%204.935%201.323-1.324z%22%20fill%3D%22%23AEBCCE%22%2F%3E%3Cpath%20d%3D%22M283.223%20517.414c-1.09-1.09-1.688-2.543-1.688-4.09%200-1.547.598-3%201.7-4.1%201.09-1.09%202.542-1.69%204.09-1.69%201.546%200%203%20.6%204.1%201.69%201.09%201.1%201.688%202.553%201.688%204.1%200%201.547-.597%203-1.687%204.09-1.102%201.102-2.555%201.7-4.102%201.7-1.547%200-3-.598-4.1-1.7z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
